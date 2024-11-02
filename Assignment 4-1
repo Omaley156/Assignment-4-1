@@ -1,0 +1,21 @@
+
+charge = 0.00
+numChars = 18
+color = "black"
+woodtype = "oak"
+
+charge = 35.00
+
+if numChars > 5:
+    charge = charge + ((numChars-5) * 4)
+
+if color == "gold":
+    charge = charge + 15.00
+
+if woodtype == "oak":
+    charge = charge + 20.00
+
+
+
+print("The charge for this sign is $" + str(charge))
+
